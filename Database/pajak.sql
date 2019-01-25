@@ -101,6 +101,7 @@ CREATE TABLE `sppt` (
   `Tahun` year(4) NOT NULL,
   `Tgl_Jatuh_Tempo` date NOT NULL,
   `Denda` int(11) NOT NULL,
+  `Rincian_Denda` varchar(300) NOT NULL,
   `Total_Tagihan` int(11) NOT NULL,
   `Tempat_Pembayaran` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -109,7 +110,7 @@ CREATE TABLE `sppt` (
 -- Dumping data untuk tabel `sppt`
 --
 
-INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
+INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, ` `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
 ('4Aiwjdiw', '1028394808193849', '17232011', 2011, '2019-01-08', 0, 0, 'Tegal');
 
 -- --------------------------------------------------------
