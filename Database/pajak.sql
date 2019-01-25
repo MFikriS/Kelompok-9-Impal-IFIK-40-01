@@ -31,7 +31,7 @@ CREATE TABLE `dppk` (
   `Username` varchar(10) NOT NULL,
   `Password` varchar(14) NOT NULL,
   `Nama_Pegawai` varchar(22) NOT NULL,
-  `Alamat` varchar(1000) NOT NULL,
+  `Alamat` varchar(300) NOT NULL,
   `No_Telepon` char(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -51,7 +51,7 @@ INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alama
 CREATE TABLE `objek pajak` (
   `NOP` char(18) NOT NULL,
   `Jenis_Penggunaan_Bangunan` varchar(24) NOT NULL,
-  `Letak_Objek_Pajak` varchar(1000) NOT NULL,
+  `Letak_Objek_Pajak` varchar(300) NOT NULL,
   `Objek_Pajak` varchar(8) NOT NULL,
   `Nilai_Jual` int(11) NOT NULL,
   `Luas_M2` int(11) NOT NULL,
