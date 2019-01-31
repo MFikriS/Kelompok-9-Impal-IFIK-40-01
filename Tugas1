@@ -1,3 +1,5 @@
+- Create
+
 CREATE TABLE `dppk` (
 
   `ID_Pegawai` char(8) NOT NULL,
@@ -102,4 +104,21 @@ CREATE TABLE `wajib pajak` (
   `No_Telepon` char(12) NOT NULL
 
 );
+
+
+- Insert
+
+INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
+('123456789012345', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247');
+
+INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
+('123456789054321', 'Nenden Zulfah N.H', 'Jalan Salak No. 17', '087712345510');
+
+INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
+('123456789018275', 'Daffa Globa Era', 'Jalan Lele No. 18', '087715238491');
+
+INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
+('123456789014810', 'Elizabeth Ramah S.M', 'Jalan Bawal No. 19', '081239401901');
+
+
 
