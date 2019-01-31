@@ -12,7 +12,7 @@ CREATE TABLE `dppk` (
 
   `No_Telepon` char(12) NOT NULL
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 
 
@@ -46,7 +46,7 @@ CREATE TABLE `objek pajak` (
 
   `ID_Pegawai` char(8) NOT NULL
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 
 CREATE TABLE `pembayaran` (
@@ -65,7 +65,7 @@ CREATE TABLE `pembayaran` (
 
   `Status_Pembayaran` varchar(12) NOT NULL
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 
 CREATE TABLE `sppt` (
@@ -88,8 +88,7 @@ CREATE TABLE `sppt` (
 
   `Tempat_Pembayaran` varchar(40) NOT NULL
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+);
 
 
 CREATE TABLE `wajib pajak` (
@@ -102,5 +101,5 @@ CREATE TABLE `wajib pajak` (
 
   `No_Telepon` char(12) NOT NULL
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
