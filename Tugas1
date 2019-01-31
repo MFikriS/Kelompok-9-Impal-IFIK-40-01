@@ -1,1 +1,106 @@
+CREATE TABLE `dppk` (
+
+  `ID_Pegawai` char(8) NOT NULL,
+
+  `Username` varchar(10) NOT NULL,
+
+  `Password` varchar(14) NOT NULL,
+
+  `Nama_Pegawai` varchar(22) NOT NULL,
+
+  `Alamat` varchar(300) NOT NULL,
+
+  `No_Telepon` char(12) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `objek pajak` (
+
+  `NOP` char(18) NOT NULL,
+
+  `Jenis_Penggunaan_Bangunan` varchar(24) NOT NULL,
+
+  `Letak_Objek_Pajak` varchar(300) NOT NULL,
+
+  `Objek_Pajak` varchar(8) NOT NULL,
+
+  `Nilai_Jual` int(11) NOT NULL,
+
+  `Luas_M2` int(11) NOT NULL,
+
+  `Kelas` varchar(3) NOT NULL,
+
+  `NJOP_Per_M2` int(11) NOT NULL,
+
+  `Total_NJOP` int(11) NOT NULL,
+
+  `NJOPTKP` int(11) NOT NULL,
+
+  `NJKP` int(11) NOT NULL,
+
+  `PBB_Terhutang` int(11) NOT NULL,
+
+  `NPWP` char(15) NOT NULL,
+
+  `ID_Pegawai` char(8) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `pembayaran` (
+
+  `ID_Bayar` char(10) NOT NULL,
+
+  `ID_Pegawai` char(8) NOT NULL,
+
+  `NPWP` char(15) NOT NULL,
+
+  `No_SPPT` varchar(11) NOT NULL,
+
+  `Tgl_Bayar` date NOT NULL,
+
+  `Total_Bayar` int(11) NOT NULL,
+
+  `Status_Pembayaran` varchar(12) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `sppt` (
+
+  `No_SPPT` varchar(11) NOT NULL,
+
+  `NOP` char(18) NOT NULL,
+
+  `ID_Pegawai` char(8) NOT NULL,
+
+  `Tahun` year(4) NOT NULL,
+
+  `Tgl_Jatuh_Tempo` date NOT NULL,
+
+  `Denda` int(11) NOT NULL,
+
+  `Rincian_Denda` varchar(300) NOT NULL,
+
+  `Total_Tagihan` int(11) NOT NULL,
+
+  `Tempat_Pembayaran` varchar(40) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `wajib pajak` (
+
+  `NPWP` char(15) NOT NULL,
+
+  `Nama` varchar(22) NOT NULL,
+
+  `Alamat` varchar(1000) NOT NULL,
+
+  `No_Telepon` char(12) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
