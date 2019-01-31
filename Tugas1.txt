@@ -120,7 +120,6 @@ INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
 INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
 ('123456789014810', 'Elizabeth Ramah S.M.', 'Jalan Bawal No. 19', '081239401901');
 
-
 INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alamat`, `No_Telepon`) VALUES
 ('17091998', 'MFikriS', 'Fikri123', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247');
 
@@ -133,3 +132,4 @@ INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alama
 INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alamat`, `No_Telepon`) VALUES
 ('17061998', 'Elizabeth', 'Elizabeth123', 'Elizabeth Ramah S.M.', 'Jalan Bawal No. 19', '081239401901');
 
+INSERT INTO `objek pajak` (`NOP`, `Jenis_Penggunaan_Bangunan`, `Letak_Objek_Pajak`, `Objek_Pajak`, `Nilai_Jual`, `Luas_M2`, `Kelas`, `NJOP_Per_M2`, `Total_NJOP`, `NJOPTKP`, `NJKP`, `PBB_Terhutang`, `NPWP`, `ID_Pegawai`) VALUES ('123456789012345678', 'Hotel', 'Jalan Manggis No. 100', 'Bangunan', '200000000', '600', 'A13', '200000', '400000', '50000', '40000000', '500000', '123456789012345', '17061998');
