@@ -136,3 +136,52 @@ INSERT INTO `objek pajak` (`NOP`, `Jenis_Penggunaan_Bangunan`, `Letak_Objek_Paja
 
 INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, 'Rincian_Denda`, `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
 ('710a6b34569', '123456789012345678', '17091998', '2017', '03-07-17', '300000', 'Bayar Telat Tahun 2017', '500000', 'Kantor DPPK Soreang');
+
+
+-Select
+
+SELECT * FROM dppk;
+
+SELECT Nama_Pegawai 
+FROM dppk 
+WHERE Alamat = LIKE 'A%';
+
+SELECT ID_Pegawai, Nama_Pegawai
+FROM dppk
+ORDER BY Nama_Pegawai ASC;
+
+
+SELECT * FROM Objek_Pajak;
+
+SELECT NPWP FROM objek pajak
+WHERE PBB_Terhutang > '1000000';
+
+SELECT * FROM objek pajak
+WHERE Jenis_Penggunaan_Bangunan IN ('Hotel','Rumah Sakit');
+
+SELECT * FROM objek pajak
+WHERE Luas_M2 BETWEEN 500 and 1000;
+
+
+SELECT * FROM pembayaran;
+
+SELECT ID_Bayar, Total_Bayar FROM pembayaran
+WHERE Status_Pembayaran = 'Belum Lunas';
+
+SELECT NPWP FROM pembayaran
+WHERE Total_Bayar BETWEEN 10000 and 100000;
+
+
+SELECT * FROM sppt;
+
+SELECT NOP FROM sppt 
+WHERE Total_Tagihan > 10000000;
+
+SELECT NOP,Denda FROM sppt
+WHERE Tempat_Pembayaran = Ciparay;
+
+
+SELECT * FROM wajib pajak;
+
+SELECT NPWP,Nama FROM wajib pajak
+WHERE Nama LIKE 'Z%';
