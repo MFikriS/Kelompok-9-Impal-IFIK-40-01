@@ -134,5 +134,5 @@ INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alama
 
 INSERT INTO `objek pajak` (`NOP`, `Jenis_Penggunaan_Bangunan`, `Letak_Objek_Pajak`, `Objek_Pajak`, `Nilai_Jual`, `Luas_M2`, `Kelas`, `NJOP_Per_M2`, `Total_NJOP`, `NJOPTKP`, `NJKP`, `PBB_Terhutang`, `NPWP`, `ID_Pegawai`) VALUES ('123456789012345678', 'Hotel', 'Jalan Manggis No. 100', 'Bangunan', '200000000', '600', 'A13', '200000', '400000', '50000', '40000000', '500000', '123456789012345', '17061998');
 
-INSERT INTO `sppt` (`N0_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, 'Rincian_Denda`, `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
+INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, 'Rincian_Denda`, `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
 ('710a6b34569', '123456789012345678', '17091998', '2017', '03-07-17', '300000', 'Bayar Telat Tahun 2017', '500000', 'Kantor DPPK Soreang');
