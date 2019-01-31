@@ -112,7 +112,7 @@ INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
 ('123456789012345', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247');
 
 INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
-('123456789054321', 'Nenden Zulfah N.H', 'Jalan Salak No. 17', '087712345510');
+('123456789054321', 'Nenden Zulfah N.H.', 'Jalan Salak No. 17', '087712345510');
 
 INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
 ('123456789018275', 'Daffa Globa Era', 'Jalan Lele No. 18', '087715238491');
@@ -120,5 +120,11 @@ INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
 INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
 ('123456789014810', 'Elizabeth Ramah S.M', 'Jalan Bawal No. 19', '081239401901');
 
+
+INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alamat`, `No_Telepon`) VALUES
+('17091998', 'MFikriS', 'Fikri123', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247');
+
+INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alamat`, `No_Telepon`) VALUES
+('17081998', 'Zulfah', 'Zulfah123', 'Nenden Zulfah N.H.', 'Jalan Salak No. 17', '087712345510');
 
 
