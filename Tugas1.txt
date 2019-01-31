@@ -137,6 +137,8 @@ INSERT INTO `objek pajak` (`NOP`, `Jenis_Penggunaan_Bangunan`, `Letak_Objek_Paja
 INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, 'Rincian_Denda`, `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
 ('710a6b34569', '123456789012345678', '17091998', '2017', '03-07-17', '300000', 'Bayar Telat Tahun 2017', '500000', 'Kantor DPPK Soreang');
 
+INSERT INTO `pembayaran` (`ID_Bayar`, `ID_Pegawai`, `NPWP`, `No_SPPT`, `Tgl_Bayar`, `Total_Tagihan`, `Total_Bayar`, `Status_Pembayaran`) VALUES
+('112543777', '17091998', '123456789012345', '710a6b34569', '03-01-18', 'Lunas', '500.000', 'Lunas');
 
 -Select
 
