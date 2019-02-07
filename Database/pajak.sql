@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 23 Jan 2019 pada 05.18
+-- Generation Time: 07 Feb 2019 pada 14.32
 -- Versi Server: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -31,7 +31,7 @@ CREATE TABLE `dppk` (
   `Username` varchar(10) NOT NULL,
   `Password` varchar(14) NOT NULL,
   `Nama_Pegawai` varchar(22) NOT NULL,
-  `Alamat` varchar(300) NOT NULL,
+  `Alamat` varchar(1000) NOT NULL,
   `No_Telepon` char(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -40,6 +40,10 @@ CREATE TABLE `dppk` (
 --
 
 INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alamat`, `No_Telepon`) VALUES
+('17061998', 'Elizabeth', 'Elizabeth123', 'Elizabeth Ramah S.M.', 'Jalan Bawal No. 19', '081239401901'),
+('17071998', 'Daffa', 'Daffa123', 'Daffa Globa Era', 'Jalan Lele No. 18', '087715238491'),
+('17081998', 'Zulfah', 'Zulfah123', 'Nenden Zulfah N.H.', 'Jalan Salak No. 17', '087712345510'),
+('17091998', 'MFikriS', 'Fikri123', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247'),
 ('17232011', 'MFikriS', 'fikri123', 'Muh. Fikri Septiawan', 'Jl. Manggis No.16', '087715498247');
 
 -- --------------------------------------------------------
@@ -51,7 +55,7 @@ INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alama
 CREATE TABLE `objek pajak` (
   `NOP` char(18) NOT NULL,
   `Jenis_Penggunaan_Bangunan` varchar(24) NOT NULL,
-  `Letak_Objek_Pajak` varchar(300) NOT NULL,
+  `Letak_Objek_Pajak` varchar(1000) NOT NULL,
   `Objek_Pajak` varchar(8) NOT NULL,
   `Nilai_Jual` int(11) NOT NULL,
   `Luas_M2` int(11) NOT NULL,
@@ -70,7 +74,8 @@ CREATE TABLE `objek pajak` (
 --
 
 INSERT INTO `objek pajak` (`NOP`, `Jenis_Penggunaan_Bangunan`, `Letak_Objek_Pajak`, `Objek_Pajak`, `Nilai_Jual`, `Luas_M2`, `Kelas`, `NJOP_Per_M2`, `Total_NJOP`, `NJOPTKP`, `NJKP`, `PBB_Terhutang`, `NPWP`, `ID_Pegawai`) VALUES
-('1028394808193849', 'Perumahan', 'Jalan Manggis No.16 Tegal', '', 0, 0, '', 0, 0, 0, 0, 0, '123456789012345', '17232011');
+('102839480819384', 'Perumahan', 'Jalan Manggis No.16 Tegal', '', 0, 0, '', 0, 0, 0, 0, 0, '123456789012345', '17232011'),
+('123456789012345678', 'Hotel', 'Jalan Manggis No. 100', 'Bangunan', 200000000, 600, 'A13', 200000, 400000, 50000, 40000000, 500000, '123456789012345', '17061998');
 
 -- --------------------------------------------------------
 
@@ -88,6 +93,13 @@ CREATE TABLE `pembayaran` (
   `Status_Pembayaran` varchar(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `pembayaran`
+--
+
+INSERT INTO `pembayaran` (`ID_Bayar`, `ID_Pegawai`, `NPWP`, `No_SPPT`, `Tgl_Bayar`, `Total_Bayar`, `Status_Pembayaran`) VALUES
+('1233535', '17061998', '123456789014810', '4Aiwjdiw', '2019-02-08', 50000, 'Lunas');
+
 -- --------------------------------------------------------
 
 --
@@ -101,7 +113,6 @@ CREATE TABLE `sppt` (
   `Tahun` year(4) NOT NULL,
   `Tgl_Jatuh_Tempo` date NOT NULL,
   `Denda` int(11) NOT NULL,
-  `Rincian_Denda` varchar(300) NOT NULL,
   `Total_Tagihan` int(11) NOT NULL,
   `Tempat_Pembayaran` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -110,8 +121,8 @@ CREATE TABLE `sppt` (
 -- Dumping data untuk tabel `sppt`
 --
 
-INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, ` `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
-('4Aiwjdiw', '1028394808193849', '17232011', 2011, '2019-01-08', 0, 0, 'Tegal');
+INSERT INTO `sppt` (`No_SPPT`, `NOP`, `ID_Pegawai`, `Tahun`, `Tgl_Jatuh_Tempo`, `Denda`, `Total_Tagihan`, `Tempat_Pembayaran`) VALUES
+('4Aiwjdiw', '102839480819384', '17232011', 2011, '2019-01-08', 0, 0, 'Tegal');
 
 -- --------------------------------------------------------
 
@@ -131,7 +142,10 @@ CREATE TABLE `wajib pajak` (
 --
 
 INSERT INTO `wajib pajak` (`NPWP`, `Nama`, `Alamat`, `No_Telepon`) VALUES
-('123456789012345', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247');
+('123456789012345', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247'),
+('123456789014810', 'Elizabeth Ramah S.M.', 'Jalan Bawal No. 19', '081239401901'),
+('123456789018275', 'Daffa Globa Era', 'Jalan Lele No. 18', '087715238491'),
+('123456789054321', 'Nenden Zulfah N.H.', 'Jalan Salak No. 17', '087712345510');
 
 --
 -- Indexes for dumped tables
