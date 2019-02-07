@@ -43,8 +43,7 @@ INSERT INTO `dppk` (`ID_Pegawai`, `Username`, `Password`, `Nama_Pegawai`, `Alama
 ('17061998', 'Elizabeth', 'Elizabeth123', 'Elizabeth Ramah S.M.', 'Jalan Bawal No. 19', '081239401901'),
 ('17071998', 'Daffa', 'Daffa123', 'Daffa Globa Era', 'Jalan Lele No. 18', '087715238491'),
 ('17081998', 'Zulfah', 'Zulfah123', 'Nenden Zulfah N.H.', 'Jalan Salak No. 17', '087712345510'),
-('17091998', 'MFikriS', 'Fikri123', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247'),
-('17232011', 'MFikriS', 'fikri123', 'Muh. Fikri Septiawan', 'Jl. Manggis No.16', '087715498247');
+('17091998', 'MFikriS', 'Fikri123', 'Muh. Fikri Septiawan', 'Jalan Manggis No. 16', '087715298247');
 
 -- --------------------------------------------------------
 
