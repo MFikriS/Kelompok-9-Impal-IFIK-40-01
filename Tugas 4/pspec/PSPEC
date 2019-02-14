@@ -1,0 +1,48 @@
+Nama Proses : mencari NOP
+Deskripsi : proses mencari NOP untuk melakukan pembayaran berlaku untuk wajib pajak atau validasi pembayaran berlaku untuk dppk
+Input : data NOP
+Output : Tabel SPPT dan Tabel hasil Pembayaran
+Kondisi error : data NOP yang dimasukan tidak sesuai dengan data yang ada di database tabel objek pajak.
+Algoritma:
+1. input data NOP
+2. klik tombol search
+3. jika data nop yang diinputkan sesuai dengan database, maka akan menampilkan tabel sppt yang ada di database.
+4. jika data tidak sesuai dengan database maka akan menampilkan notifikasi bahwa NOP yang diinputkan tidak valid.
+
+Nama Proses : Login
+Deskripsi : proses masuk ke sistem pajak yang dilakukan dppk
+Input : username dan password
+Output : Masuk ke sistem pajak (melakukan validasi pembayaran, membuat sppt, dll)
+Kondisi error : data username atau password yang dimasukan tidak sesuai yang ada di database
+Algoritma :
+1. input username dan password
+2. klik login
+3. jika username dan password sesuai dengan yang ada di database, maka langsung masuk ke sistem pajak sbg dppk
+4. jika username atau password yang dimasukan tidak sesuai dengan yang ada di database maka kita harus memasukan ulang username dan passwordnya,
+
+
+Nama Proses: input objek pajak
+Deskripsi : detail dari profil objek pajak dari wajib pajak
+Input : npwp, nop, id pegawai, jenis penggunaan bangunan, letak objek pajak, nilai jual, luas(m2), kelas, njop per m2, total njop, njoptkp, njkp
+Output : data objek pajak
+Kondisi error : pada saat memasukkan inputan yang salah pada kolom njop, luas, dll.
+Algoritma : 
+1. Input data pada setiap kolom objek pajak
+2. klik submit
+3. jika data inputkan salah, maka sistem akan mengeluarkan notifikasi bahwa data yang dimasukkan salah 
+4. untuk menghitung Nilai jual = (Luas Bangunan * Tarif Bangunan per m2) + (Luas Tanah * Tarif Tanah per m2)
+--> Tarif Bangunan per m2 = 500.000
+--> Tarif Bangunan per m2 = 1000.000
+5. untuk menghitung NJKP = 20% * Nilai Jual
+6. untuk menghitung PBB Terhutang = 0.5% * NJKP
+
+
+Nama Proses: membuat form SPPT
+Deskripsi : proses untuk input data ke dalam database tabel sppt 
+Input : NOP, Tahun, tanggal jatuh tempo, Denda, total tagihan, tempat pembayaran.
+Output : data sppt yang harus dibayarkan oleh wajib pajak, diibaratkan surat tagihan pembayaran PBB.
+Kondisi error : Salah memasukan NOP
+Algoritma :
+1. input data yang sesuai dengan yang diminta oleh form sppt
+2. klik submit
+3. menampilkan Nomor SPPT(format: NOP belakang+BulanJatuhTempo+Tahun+kode tempat pembayaran) secara otomatis. 
