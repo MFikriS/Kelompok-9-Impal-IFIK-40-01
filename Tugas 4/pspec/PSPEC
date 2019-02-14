@@ -1,7 +1,7 @@
 Nama Proses : mencari NOP
 Deskripsi : proses mencari NOP untuk melakukan pembayaran berlaku untuk wajib pajak atau validasi pembayaran berlaku untuk dppk
 Input : data NOP
-Output : Tabel SPPT dan Tabel hasil Pembayaran
+Output : Tabel SPPT atau Tabel hasil Pembayaran
 Kondisi error : data NOP yang dimasukan tidak sesuai dengan data yang ada di database tabel objek pajak.
 Algoritma:
 1. input data NOP
