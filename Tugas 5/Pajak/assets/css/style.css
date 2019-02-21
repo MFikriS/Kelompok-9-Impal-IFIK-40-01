@@ -1,0 +1,269 @@
+body {
+  background: #3498db;
+  font-family: sans-serif;
+}
+.bawah #logo a{
+  color: red;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 32px;
+  margin: 100px 0px;
+}
+.bawah #gambar a{
+  color: red;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 32px;
+  margin: 100px 100px;
+}
+#gambar a:hover{
+  color: #014c8c;
+}
+#logo a{
+  color: #fff;
+  font-family: Quicksand;
+  margin: -20px 0px ;
+  font-size: 60px;
+}
+#logo a:hover{
+  color: #014c8c;
+}
+h1{
+  color: #fff;
+  font-family: Quicksand;
+  margin: -20px 1040px ;
+  font-size: 60px;
+}
+h2{
+  color: #fff;
+  font-size: 40px;
+  font-family: impact;
+  border: 100px;
+  margin-left: 610px;
+}
+#sign{
+  color: #fff;
+  font-size: 40px;
+  font-family: impact;
+  border: 100px;
+  margin-left: 570px;
+}
+#signup{
+  margin-left: 840px;
+  height: 60px;
+  width: 120px;
+}
+#name{
+  margin-left: 400px;
+  color: black;
+  font-size: 20px;
+  padding: 6px;
+  width: 560px;
+}
+#address{
+  margin-left: 400px;
+  color: black;
+  font-size: 20px;
+  padding: 6px;
+  width: 560px;
+  height: 80px;
+}
+#login1{
+  width: 120px;
+  height: 60px;
+  margin-left: -20px;
+}
+#nama{
+  margin-left: 400px;
+  color: #fff;
+  font-size: 20px;
+}
+h3{
+  color: #90ffff;
+  text-align:center;
+  margin-left: -860px;
+}
+h4{
+  color: #ffffff;
+  margin-left: -860px;
+  margin-top: -4px;
+}
+p{
+  color: #ffffff;
+  margin-left: -800px;
+  margin-top: -30px;
+}
+h5{
+  color: #80ffff;
+  font-size: 50px;
+  margin-top: -60px;
+}
+#username{
+  color: #fff;
+  font-size: 26px;
+  margin-left: -400px;
+} 
+#username1{
+  color: red;
+  margin: 0px 400px;
+  padding: 12px 10px 12px 10px;
+  width:500px; 
+  border:10px; 
+  border-radius:8px; 
+  -moz-border-radius:4px;
+  background:white; 
+  height:50px; 
+  font-family:verdana;
+  margin-left:-400px;
+}
+#password1{
+  color: red;
+  margin: 0px 400px;
+  padding: 12px 10px 12px 10px;
+  width:500px; 
+  border:10px; 
+  border-radius:8px; 
+  -moz-border-radius:4px;
+  background:white; 
+  height:50px; 
+  font-family:verdana;
+  margin-left:-400px;
+}
+#cari{
+  width: 950px;
+  height: 40px;
+  margin-left: 200px;
+  text-align: center;
+}
+#login-atas{
+  margin-left: 1160px;
+  margin-top: 20px;
+  width: 146px;
+  border-radius: 6px;
+}
+#signup-atas{
+  margin-left: 1160px;
+  margin-top: 4px;
+  width: 146px;
+  border-radius: 6px;
+}
+#promo{
+  margin-left: 346px;
+  margin-top: -160px;
+  width: 146px;
+  border-radius: 6px;
+}
+#booking{
+  margin-left: 870px;
+  margin-top: -200px;
+  width: 146px;
+  border-radius: 6px;
+}
+.login {
+  border-radius: 10px;
+  padding-left: 800px;
+}
+#promo a{
+  text-align: center;
+  font-family: impact;
+  font-size: 32px;
+  margin: 0px 0px -100px -826px;
+  padding: 300px 4px 100px 1200px;
+}
+.tengah{
+  background: grey;
+  width: 1350px;
+  height: 190px;
+  margin-left: -10px;
+}
+.bawah #gambar-promo{
+  margin-left: 360px;
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  border: 0px; 
+  box-shadow: 0px 0px 0px 4px rgb(204, 204, 204); 
+  padding: 20px;
+  background-color: blue;
+}
+.bawah #gambar-book{
+  margin-left: 400px;
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  border: 0px; 
+  box-shadow: 0px 0px 0px 4px rgb(204, 204, 204); 
+  padding: 30px;
+  background-color: blue;
+}
+.bawah{
+	background-color: white;
+	height: 320px;
+	width: 1350px;
+	margin-left: -10px;
+}
+label {
+  font-size: 10pt;
+  color: #555;
+}
+h7{
+  text-align: center;
+  font-family: impact;
+  font-size: 32px;
+  margin: 0px 0px 0px -628px;
+  padding: 0px 4px 100px 1000px;
+}
+h8{
+  text-align: center;
+  font-family: impact;
+  font-size: 32px;
+  margin: 0px 0px 0px -182px;
+  padding: 100px 4px 100px 400px;
+}
+p1{
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 0px -10px -882px;
+  padding: 300px 4px 100px 1228px;
+}
+p2{
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 0px -100px -880px;
+  padding: 300px 4px 0px 1162px;
+}
+p3{
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 0px 0px -660px;
+  padding: 220px 20px 0px 940px;	
+}
+input[type="text"],
+input[type="password"],
+
+textarea {
+  padding: 0px;
+  width: 95%;
+  background: white;
+  border: 0;
+  font-size: 12pt;
+  margin: 0px 0px;
+}
+a{
+  margin: -40px 400px;
+  color: white;
+  font-style: bold;
+}
+.tombol{
+  background: blue;
+  color: white;
+  border: 0;
+  padding: 14px 40px;
+  margin: 0px 800px;
+  border:10px; 
+  border-radius:10px; 
+  -moz-border-radius:10px;
+}
